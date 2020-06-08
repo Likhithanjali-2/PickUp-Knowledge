@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+.topnav a {
+  float: left;
+  color: #000080;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd ;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:#000080  ;
+  color:white;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #000080;
+    clear: left;
+    font-size:large;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 180px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size:20px;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+} 
+.icon-bar a {
+    float: left;
+    width: 5%;
+    text-align: center;
+    padding: 13px 0;
+    color: #000080;
+    font-size: 25px;
+}
+.vertical-menu {
+    width: 180px;
+}
+
+.vertical-menu a {
+    background-color:#eee;
+    color:black;
+    display: block;
+    padding:15px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #000080;
+    color: white;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 9px 17px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color:#000080;
+    color: white;
+}
+
+.next {
+    background-color: #000080;
+    color: white;
+	margin-left:780px;
+}
+
+</style>
+
+</head>
+<body>
+<header>
+<h1>CSS </h1>
+</header>
+
+<div class="topnav">
+  <div class="icon-bar"> <a class="" href="index.html"><i class="fa fa-home"></i></a> </div>
+<a href="allprolang.html">All Languages</a>
+  <a href="c_overview.html">C</a>
+  <a  href="cpp_overview.html">CPP</a>
+  <a href="java_overview.html">JAVA</a>
+  <a href="html_overview.html">HTML</a>
+  <a class="active" href="css_overview.html">CSS</a>
+  <a href="javascript_overview.html">JAVASCRIPT</a>
+  <a href="python_overview.html">PYTHON</a>
+   
+  <div class="icon-bar"> <a class="" href="#"><i class="fa fa-search"></i></a> </div></div>
+<nav>
+<div class="vertical-menu">
+<a class="active" href="css_overview.html">Overview&Syntax</a> 
+<a href="css_waysToInsert.html">Ways To Insert</a> 
+<a href="css_colors.html">Colors</a> 
+<a href="css_background.html">Background</a> 
+<a href="css_border.html">Borders</a> 
+<a href="css_margin.html">Margins</a> 
+<a href="css_padding.html">Padding</a> 
+<a href="css_height&width.html">Height&Width</a> 
+<a href="css_boxModel.html">Box Model</a> 
+<a href="css_outline.html">Outline</a> 
+<a href="css_text.html">Text</a> 
+<a href="css_fonts.html">Fonts</a> 
+<a href="css_icons.html">Icons</a> 
+<a href="css_links.html">Links</a> 
+<a href="css_lists.html">Lists</a> 
+<a href="css_tables.html">Tables</a> 
+<a href="css_overflow.html">Overflow</a> 
+<a href="css_float.html">Float</a> 
+<a href="css_display.html">Display</a> 
+<a href="css_maxWidth.html">Max Width</a> 
+<a href="css_position.html">Position</a> 
+</div> </nav>
+
+<article>
+<a href="#" class="previous">&laquo; Previous</a>
+<a href="css_waysToInsert.html" class="next">Next &raquo;</a>
+<h1 style="color:#000080";>Overview & Syntax</h1>
+
+<h3>What is CSS?</h3>
+<ul>
+<li>CSS stands for Cascading Style Sheets
+<li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+<li>CSS saves a lot of work. It can control the layout of multiple web pages all at once
+<li>External stylesheets are stored in CSS files
+<li>CSS is a language that describes the style of an HTML document.
+<li>CSS describes how HTML elements should be displayed.</li></ul>
+<h3>CSS Example</h3>
+<table border="" height="" width="400">
+<td><pre><code>body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}</td></table></code></pre>
+<h3>CSS Syntax and Selectors</h3>
+<h3>CSS Syntax</h3>
+A CSS rule-set consists of a selector and a declaration block:<br>
+<b>h1 {color:blue;font-size:12px;}</b><br>
+Here h1 is the selector<br>
+     color and font-size are properties<br>
+     blue and 12px are values given to the properties<br>
+     the combination of <b>Property:Value</b> is called Declaration.
+
+<ul>
+<li>The selector points to the HTML element you want to style.
+<li>The declaration block contains one or more declarations separated by semicolons.
+<li>declaration includes a CSS property name and a value, separated by a colon.
+<li>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</li></ul>
+<h3>CSS Selectors</h3>
+CSS selectors are used to "find" (or select) HTML elements based on their element name, id, class, attribute, and more.
+<h3>The element Selector</h3>
+The element selector selects elements based on the element name.
+You can select all &ltp&gt elements on a page like this (in this case, all &ltp&gt elements will be center-aligned, with a red text color):
+<h3>Example</h3>
+<table border="" height="" width="400">
+<td><pre><code>p {
+    text-align: center;
+    color: red;
+}</td></code></pre></table>
+<h3>The id Selector</h3>
+The id selector uses the id attribute of an HTML element to select a specific element.
+The id of an element should be unique within a page, so the id selector is used to select one unique element!
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+The style rule below will be applied to the HTML element with id="para1":
+<h3>Example</h3>
+<table border="" height="" width="400">
+<td><pre><code>#para1 {
+    text-align: center;
+    color: red;
+}</code></pre></td></table>
+<h3>The class Selector</h3>
+The class selector selects elements with a specific class attribute.
+To select elements with a specific class, write a period (.) character, followed by the name of the class.
+In the example below, all HTML elements with class="center" will be red and center-aligned:
+
+<h3>Example</h3>
+<table border="" height="" width="400">
+<td><pre><code>.center {
+    text-align: center;
+    color: red;
+}</code></pre></td></table>
+You can also specify that only specific HTML elements should be affected by a class.
+In the example below, only &ltp&gt elements with class="center" will be center-aligned:
+<h3>Example</h3>
+<table border="" height="" width="400">
+<td><pre><code>p.center {
+    text-align: center;
+    color: red;
+}</pre></code></td></table>
+HTML elements can also refer to more than one class.
+In the example below, the &ltp&gt element will be styled according to class="center" and to class="large":
+<h3>Example</h3>
+&ltp class="center large">This paragraph refers to two classes.&lt/p&gt<br>
+<b>Note:</b> A class name cannot start with a number!
+<h3>Grouping Selectors</h3>
+If you have elements with the same style definitions, like this:
+<table border="" height="" width="400">
+<td><pre><code>
+h1 {
+    text-align: center;
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    color: red;
+}
+
+p {
+    text-align: center;
+    color: red;
+}</code></pre></td></table>
+It will be better to group the selectors, to minimize the code.
+To group selectors, separate each selector with a comma.
+
+In the example below we have grouped the selectors from the code above:
+<h3>Example</h3>
+<table border="" height="" width="400">
+<td><pre><code>h1, h2, p {
+    text-align: center;
+    color: red;
+}</code></pre></td></table>
+<h3>CSS Comments</h3>
+Comments are used to explain the code, and may help when you edit the source code at a later date.
+Comments are ignored by browsers.
+A CSS comment starts with /* and ends with */. Comments can also span multiple lines:
+<h3>Example</h3>
+<table border="" height="" width="400">
+<td><pre><code>p {
+    color: red;
+    /* This is a single-line comment */
+    text-align: center;
+}
+
+/* This is
+a multi-line
+comment */</code></pre></td></table>
+
+<br><br>
+<a href="#" class="previous">&laquo; Previous</a>
+<a href="css_waysToInsert.html" class="next">Next &raquo;</a>
+</article>
+<footer>Devoloped by LE's</footer>
+</div>
+</body>
+</html>

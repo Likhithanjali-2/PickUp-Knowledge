@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+.topnav a {
+  float: left;
+  color: #000080;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd ;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:#000080  ;
+  color:white;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #000080;
+    clear: left;
+    font-size:large;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 180px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size:20px;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+} 
+.icon-bar a {
+    float: left;
+    width: 5%;
+    text-align: center;
+    padding: 13px 0;
+    color: #000080;
+    font-size: 25px;
+}
+.vertical-menu {
+    width: 180px;
+}
+
+.vertical-menu a {
+    background-color:#eee;
+    color:black;
+    display: block;
+    padding:15px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #000080;
+    color: white;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 9px 17px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color:#000080;
+    color: white;
+}
+
+.next {
+    background-color: #000080;
+    color: white;
+	margin-left:780px;
+}
+
+</style>
+
+</head>
+<body>
+<header>
+<h1>CSS </h1>
+</header>
+
+<div class="topnav">
+  <div class="icon-bar"> <a class="" href="index.html"><i class="fa fa-home"></i></a> </div>
+<a href="allprolang.html">All Languages</a>
+  <a href="c_overview.html">C</a>
+  <a  href="cpp_overview.html">CPP</a>
+  <a href="java_overview.html">JAVA</a>
+  <a href="html_overview.html">HTML</a>
+  <a class="active" href="css_overview.html">CSS</a>
+  <a href="javascript_overview.html">JAVASCRIPT</a>
+  <a href="python_overview.html">PYTHON</a>
+   
+  <div class="icon-bar"> <a class="" href="#"><i class="fa fa-search"></i></a> </div></div>
+<nav>
+<div class="vertical-menu">
+<a href="css_overview.html">Overview&Syntax</a> 
+<a href="css_waysToInsert.html">Ways To Insert</a> 
+<a href="css_colors.html">Colors</a> 
+<a href="css_background.html">Background</a> 
+<a href="css_border.html">Borders</a> 
+<a href="css_margin.html">Margins</a> 
+<a href="css_padding.html">Padding</a> 
+<a href="css_height&width.html">Height&Width</a> 
+<a href="css_boxModel.html">Box Model</a> 
+<a href="css_outline.html">Outline</a> 
+<a href="css_text.html">Text</a> 
+<a href="css_fonts.html">Fonts</a> 
+<a href="css_icons.html">Icons</a> 
+<a href="css_links.html">Links</a> 
+<a href="css_lists.html">Lists</a> 
+<a href="css_tables.html">Tables</a> 
+<a href="css_overflow.html">Overflow</a> 
+<a class="active" href="css_float.html">Float</a> 
+<a href="css_display.html">Display</a> 
+<a href="css_maxWidth.html">Max Width</a> 
+<a href="css_position.html">Position</a> 
+</div> </nav>
+<article>
+<a href="css_overflow.html" class="previous">&laquo; Previous</a>
+<a href="css_display.html" class="next">Next &raquo;</a>
+<h1 style="color:#000080";>Floating In Css</h1>
+
+<h3>What is "Float"?</h3>
+<p>Float is a CSS positioning property. To understand its purpose and origin, we can look to print design. In a print layout, images may be set into the page such that text wraps around them as needed. This is commonly and appropriately called "text wrap".Here is an example of that.</p> 
+<img src="images/CssFloat1.png">
+<p>In page layout programs, the boxes that hold the text can be told to honor the text wrap, or to ignore it. Ignoring the text wrap will allow the words to flow right over the image like it wasn't even there. This is the difference between that image being part of the flow of the page (or not). Web design is very similar.</p>
+<img src="images/CssFloat2.png">
+<p>In web design, page elements with the CSS float property applied to them are just like the images in the print layout where the text flows around them. Floated elements remain a part of the flow of the web page. This is distinctly different than page elements that use absolute positioning. Absolutely positioned page elements are removed from the flow of the webpage, like when the text box in the print layout was told to ignore the page wrap. Absolutely positioned page elements will not affect the position of other elements and other elements will not affect them, whether they touch each other or not.</p>
+Setting the float on an element with CSS happens like this:
+<table border="" width="400"><td>#sidebar {<br>
+  float: right;<br>			
+}</td></table>
+<p>There are four valid values for the float property. Left and Right float elements those directions respectively. None (the default) ensures the element will not float and Inherit which will assume the float value from that elements parent element.</p>
+<h3>What are floats used for?</h3>
+<p>Aside from the simple example of wrapping text around images, floats can be used to create entire web layouts.</p>
+<img src="images/CssFloat3.png">
+<p>Floats are also helpful for layout in smaller instances. Take for example this little area of a web page. If we use float for our little avatar image, when that image changes size the text in the box will reflow to accommodate:</p>
+<img src="images/CssFloat4.png">
+<p>This same layout could be accomplished using relative positioning on container and absolute positioning on the avatar as well. In doing it this way, the text would be unaffected by the avatar and not be able to reflow on a size change.</p>
+<img src="images/CssFloat5.png">
+<h3>Clearing the Float</h3>
+<p>Float's sister property is clear. An element that has the clear property set on it will not move up adjacent to the float like the float desires, but will move itself down past the float. Again an illustration probably does more good than words do.</p>
+<img src="images/CssFloat6.png">
+<p>In the above example, the sidebar is floated to the right and is shorter than the main content area. The footer then is required to jump up into that available space as is required by the float. To fix this problem, the footer can be cleared to ensure it stays beneath both floated columns.</p>
+<table border="" width="400">
+<td>#footer {<br>
+  clear: both;<br>			
+}</td></table>
+<p>Clear has four valid values as well. Both is most commonly used, which clears floats coming from either direction. Left and Right can be used to only clear the float from one direction respectively. None is the default, which is typically unnecessary unless removing a clear value from a cascade. Inherit would be the fifth, but is strangely not supported in Internet Explorer. Clearing only the left or right float, while less commonly seen in the wild, definitely has its uses.</p>
+<img src="images/CssFloat7.png">
+<h3>Techniques for Clearing Floats</h3>
+<p>If you are in a situation where you always know what the succeeding element is going to be, you can apply the clear: both; value to that element and go about your business. This is ideal as it requires no fancy hacks and no additional elements making it perfectly semantic. Of course things don't typically work out that way and we need to have more float-clearing tools in our toolbox.</p>
+<ul>
+<li><b>The Empty Div Method</b> is, quite literally, an empty div. &ltdiv style="clear: both;"&gt&lt/div&gt. Sometimes you'll see a &ltbr&gt element or some other random element used, but div is the most common because it has no browser default styling, doesn't have any special function, and is unlikely to be generically styled with CSS. This method is scorned by semantic purists since its presence has no contextual meaning at all to the page and is there purely for presentation. Of course in the strictest sense they are right, but it gets the job done right and doesn't hurt anybody.
+<li><b>The Overflow Method</b> relies on setting the overflow CSS property on a parent element. If this property is set to auto or hidden on the parent element, the parent will expand to contain the floats, effectively clearing it for succeeding elements. This method can be beautifully semantic as it may not require an additional elements. However if you find yourself adding a new div just to apply this, it is equally as non-semantic as the empty div method and less adaptable. Also bear in mind that the overflow property isn't specifically for clearing floats. Be careful not to hide content or trigger unwanted scrollbars.
+<li><b>The Easy Clearing Method</b> uses a clever CSS pseudo selector (:after) to clear floats. Rather than setting the overflow on the parent, you apply an additional class like "clearfix" to it. </li></ul>Then apply this CSS:
+<table border="" width="400"><td>.clearfix:after {<br> 
+   content: "."; <br> 
+   visibility: hidden; <br> 
+   display: block; <br> 
+   height: 0; <br> 
+   clear: both;<br> 
+}</td></table>
+<p>This will apply a small bit of content, hidden from view, after the parent element which clears the float. This isn't quite the whole story, as additional code needs to be used to accomodate for older browsers.</p>
+<br><br>
+<a href="css_overflow.html" class="previous">&laquo; Previous</a>
+<a href="css_display.html" class="next">Next &raquo;</a>
+</article>
+<footer>Devoloped by LE's</footer>
+</div>
+</body>
+</html>
